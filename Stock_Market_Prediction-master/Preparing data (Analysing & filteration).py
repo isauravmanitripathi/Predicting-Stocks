@@ -149,22 +149,22 @@ for year in years:
                     pass
                 pass
             except KeyError:
-                print 'key error'
+                print('key error')
                 #print NYTimes_data["response"]["docs"][:][i]
                 count_main_not_exist += 1
                 pass   
             except TypeError:
-                print "type error"
+                print("type error")
                 #print NYTimes_data["response"]["docs"][:][i]
                 count_main_not_exist += 1
                 pass
          
 
               
-print count_articles_filtered 
-print count_total_articles                     
-print count_main_not_exist
-print count_unicode_error
+print( count_articles_filtered )
+print (count_total_articles)
+print (count_main_not_exist)
+print (count_unicode_error)
 
 
 
@@ -192,12 +192,12 @@ for date, row in interpolated_df.T.iteritems():
                     interpolated_df.set_value(pub_date, 'articles', interpolated_df.loc[pub_date, 'articles'] + '. ' + articles_dict['headline'])  
                 
             except KeyError:
-                print 'key error'
+                print ('key error')
                 #print NYTimes_data["response"]["docs"][:][i]
                 #count_main_not_exist += 1
                 pass   
             except TypeError:
-                print "type error"
+                print ("type error")
                 #print NYTimes_data["response"]["docs"][:][i]
                 #count_main_not_exist += 1
                 pass

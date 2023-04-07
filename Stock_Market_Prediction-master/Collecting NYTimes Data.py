@@ -1,12 +1,8 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 20 00:10:29 2017
 
-@author: Dinesh
-"""
 ########## News API ########################################################
-from newsapi import NewsAPI
+from newsapi import NewsApiClient
 
 key = '96af62a035db45bda517a9ca62a25ac3'
 params = {}

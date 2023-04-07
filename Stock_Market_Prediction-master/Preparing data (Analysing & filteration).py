@@ -1,10 +1,6 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  4 14:30:12 2017
 
-@author: Dinesh
-"""
 
 import numpy as np
 import csv, json

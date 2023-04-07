@@ -9,7 +9,7 @@ import pandas as pd
 ################################################################################################
 ## Preparing DJIA data
 # Reading DJIA index prices csv file
-with open('/Users/Dinesh/Documents/Project Stock predictions/data/djia_data.csv', 'rb') as csvfile:
+with open('Data/DJIA indices data.csv', 'rb') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',')
     # Converting the csv file reader to a lists 
     data_list = list(spamreader)
@@ -85,7 +85,7 @@ count_unicode_error = 0
 count_attribute_error = 0   
 for year in years:
     for month in months:
-        file_str = '/Users/Dinesh/Documents/Project Stock predictions/data/nytimes/' + str(year) + '-' + '{:02}'.format(month) + '.json'
+        file_str = 'add file path' + str(year) + '-' + '{:02}'.format(month) + '.json'
         with open(file_str) as data_file:    
             NYTimes_data = json.load(data_file)
         count_total_articles = count_total_articles + len(NYTimes_data["response"]["docs"][:])
